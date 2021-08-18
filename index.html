@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CoinDCX Go - India's Simplest App to invest in Bitcoin</title>
+    <meta
+      name="description"
+      content="CoinDCX Go is the simplest app to invest in Bitcoin, Ethereum, and other altcoins in India. Buy and sell cryptocurrencies directly using your bank accounts easily."
+    />
+    <meta
+      name="keywords"
+      content="Bitcoin, Buy Bitcoin in India, buy bitcoin, Bitcoin App, Bitcoin wallet, Bitcoin Debit Card, bitcoin trade, Bitcoin India, Bitcoin to INR, Bitcoin price INR, Bitcoin to rupee, Bitcoin app, cryptocurrency for beginners, cryptocurrency India, cryptocurrency exchange india, cryptocurrency investment apps"
+    />
+    <meta name="fragment" content="!" />
+    <base href="/" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://coindcx.s3.amazonaws.com/static/images/841bc7c0-26a3-480b-ad50-6eaa9d26e51d/Go_FaviIcon-01.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://coindcx.s3.amazonaws.com/static/images/91d3fcc9-81a1-4a36-8301-382aa0683596/Go_FaviIcon-02.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://coindcx.s3.amazonaws.com/static/images/4c16ff93-161a-4507-ac84-ea1da5afe663/Go_FaviIcon-03.svg"
+    />
+    <link
+      rel="mask-icon"
+      href="https://coindcx.s3.amazonaws.com/static/images/91d3fcc9-81a1-4a36-8301-382aa0683596/Go_FaviIcon-02.svg"
+      color="#ff7139"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://coindcx.s3.amazonaws.com/static/images/91d3fcc9-81a1-4a36-8301-382aa0683596/Go_FaviIcon-02.svg"
+    />
+    <meta name="apple-mobile-web-app-title" content="CoinDCX" />
+    <meta name="application-name" content="CoinDCX" />
+    <meta name="msapplication-TileColor" content="#151928" />
+    <meta
+      name="msapplication-config"
+      content="/assets/favicon/browserconfig.xml?v=2"
+    />
+    <meta name="theme-color" content="#151928" />
+    <link rel="manifest" href="manifest.json" />
+    <meta http-equiv="refresh" content="3600" />
+    <link rel="dns-prefetch" href="https://coindcx.s3.amazonaws.com" />
+    <link rel="dns-prefetch" href="https://api.coindcx.com" />
+    <link rel="preload" href="/assets/scripts/webfont.js" as="script" />
+    <meta property="og:site_name" content="CoinDCX" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="CoinDCX Go - India's Simplest App to invest in Bitcoin"
+    />
+    <meta
+      property="og:description"
+      content="CoinDCX Go is the simplest app to invest in Bitcoin, Ethereum, and other altcoins in India. Buy and sell cryptocurrencies directly using your bank accounts easily."
+    />
+    <meta property="og:url" content="https://go.coindcx.com/" />
+    <meta
+      property="og:image"
+      content="https://coindcx.s3.amazonaws.com/static/images/8fb43883-ad10-428a-b1cb-a08db7c4a8a3/go_thumbnail.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CoinDCX Go - India's Simplest App to invest in Bitcoin"
+    />
+    <meta
+      name="twitter:description"
+      content="CoinDCX Go is the simplest app to invest in Bitcoin, Ethereum, and other altcoins in India. Buy and sell cryptocurrencies directly using your bank accounts easily."
+    />
+    <meta name="twitter:url" content="https://go.coindcx.com/" />
+    <meta
+      name="twitter:image"
+      content="https://coindcx.s3.amazonaws.com/static/images/8fb43883-ad10-428a-b1cb-a08db7c4a8a3/go_thumbnail.png"
+    />
+    <meta name="twitter:site" content="@coindcx" />
+    <style type="text/css">
+      @font-face {
+        font-family: "Material Icons";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/materialicons/v97/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff)
+          format("woff");
+      }
+      .material-icons {
+        font-family: "Material Icons";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        font-feature-settings: "liga";
+      }
+      @font-face {
+        font-family: "Material Icons";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/materialicons/v97/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2)
+          format("woff2");
+      }
+      .material-icons {
+        font-family: "Material Icons";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        /* -webkit-font-feature-settings: "liga";
+        -webkit-font-smoothing: antialiased; */
+      }
+    </style>
+    <meta name="p:domain_verify" content="3d9eea074556031426e653f8289f094b" />
+    <meta
+      name="google-site-verification"
+      content="IfY3AiWDrS0U4WitylkOV6L_J5CRWL4-bS-HmQbixbY"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "http:\/\/schema.org",
+        "@type": "WebSite",
+        "@id": "#website",
+        "url": "https:\/\/coindcx.com\/",
+        "name": "CoinDCX",
+        "sameAs": [
+          "https://www.facebook.com/coindcx/",
+          "https://twitter.com/coindcx",
+          "https://www.reddit.com/r/CoinDCX/",
+          "https://t.me/coindcx/",
+          "https://www.youtube.com/channel/UC3tRLIiVt1HdFsfJQu-9rzA/"
+        ]
+      }
+    </script>
+    <style type="text/css">
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdo.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7j.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdo.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdo.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdo.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lujVj9_mf.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lujVj9_mf.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lujVj9_mf.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lujVj9_mf.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lujVj9_mf.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lujVj9_mf.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu3cOWxw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmhdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwkxdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmxdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlBdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmBdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmRdu3cOWxy40.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu3cOWxw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+    <link rel="dns-prefetch" href="https://coindcx.s3.amazonaws.com" />
+    <link rel="dns-prefetch" href="https://api.coindcx.com" />
+    <script type="8b7b6af8d00f931429f834d9-text/javascript">
+      window._tfa=window._tfa||[],window._tfa.push({notify:"event",name:"page_view",id:1296049}),function(t,e,n,a){document.getElementById(a)||(t.async=1,t.src="//cdn.taboola.com/libtrc/unip/1296049/tfa.js",t.id=a,e.parentNode.insertBefore(t,e))}(document.createElement("script"),document.getElementsByTagName("script")[0],0,"tb_tfa_script");
+    </script>
+    <noscript
+      ><img
+        src="https://trc.taboola.com/1296049/log/3/unip?en=page_view"
+        width="0"
+        height="0"
+        style="display: none"
+    /></noscript>
+    <script type="8b7b6af8d00f931429f834d9-text/javascript">
+      !function(e,n,a,o,s,d,_,i){for(k in e.moengage_object=s,t={},q=function(t){return function(){(e.moengage_q=e.moengage_q||[]).push({f:t,a:arguments})}},f=["track_event","add_user_attribute","add_first_name","add_last_name","add_email","add_mobile","destroy_session","add_unique_user_id"],h={onsite:["getData"]},f)t[f[k]]=q(f[k]);d=n.createElement(a),_=n.getElementsByTagName(a)[0],d.async=1,d.src="https://cdn.moengage.com/webpush/moe_webSdk.min.latest.js",_.parentNode.insertBefore(d,_),e.moe=e.moe||function(){return i=arguments[0],t},d.onload=function(){i&&(e[s]=moe(i))}}(window,document,"script",0,"Moengage"),Moengage=moe({app_id:"7EN55YGPS362FE8NLOBHGBQ8",debug_logs:0,swPath:"/clevertap_sw.js"});
+    </script>
+    <script
+      src="https://www.cashfree.com/assets/cashfree.sdk.v1.2.js"
+      type="8b7b6af8d00f931429f834d9-text/javascript"
+    ></script>
+    <link rel="stylesheet" href="styles.da0df5deca79eb7aa58c.css" /></head
+  ><style>
+    .preLoadingWrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+    }
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    .preLoading {
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      border: 0.25rem solid rgba(255, 255, 255, 0.2);
+      border-top-color: #4964d1;
+      -webkit-animation: spin 1s infinite linear;
+      animation: spin 1s infinite linear;
+    }
+  </style>
+  <body>
+    <svg
+      style="
+        visibility: hidden;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        opacity: 0;
+        pointer-events: none;
+      "
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <lineargradient id="gradient--instaPriceChart">
+        <stop offset="0" stop-color="#f9dd00" />
+        <stop offset="1" stop-color="#f96601" />
+      </lineargradient></svg
+    ><app-root
+      ><div class="preLoadingWrapper"><div class="preLoading"></div></div
+    ></app-root>
+    <script
+      src="/assets/scripts/webfont.js"
+      type="8b7b6af8d00f931429f834d9-text/javascript"
+    ></script>
+    <script type="8b7b6af8d00f931429f834d9-text/javascript">
+      WebFont.load({google:{families:["Source Sans Pro:300,400,600,700,900"]}});
+    </script>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PQRNQX5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <script type="8b7b6af8d00f931429f834d9-text/javascript">
+      const hardRefreshButton=document.getElementById("js--hardRefresh");hardRefreshButton&&hardRefreshButton.addEventListener("click",()=>{try{hardRefreshButton.innerText="Loading...",hardRefreshButton.style.opacity=.4,hardRefreshButton.disabled=!0,localStorage.clear(),window.location.reload(!0),window.location.href="https://android--elegant-bhaskara-560564.netlify.com?ngsw-bypass=true&randomStr="+Math.random()}catch(e){hardRefreshButton.innerText="Try refreshing again",hardRefreshButton.style.opacity=1,hardRefreshButton.disabled=!1,console.error(e),window.location.href="https://android--elegant-bhaskara-560564.netlify.com?ngsw-bypass=true&randomStr="+Math.random()}});
+    </script>
+    <script type="8b7b6af8d00f931429f834d9-text/javascript">
+      window.addEventListener("DOMContentLoaded",e=>{!function(e,t,n,a,o){e[a]=e[a]||[],e[a].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var r=t.getElementsByTagName(n)[0],s=t.createElement(n);s.async=!0,s.src="https://www.googletagmanager.com/gtm.js?id=GTM-55N852T",r.parentNode.insertBefore(s,r)}(window,document,"script","dataLayer")});
+    </script>
+    <script
+      src="https://www.googleoptimize.com/optimize.js?id=GTM-N5RB862"
+      type="8b7b6af8d00f931429f834d9-text/javascript"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-115296391-1"
+      type="8b7b6af8d00f931429f834d9-text/javascript"
+    ></script>
+    <script type="8b7b6af8d00f931429f834d9-text/javascript">
+      function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-115296391-1",{optimize_id:"GTM-N536SXX"});
+    </script>
+    <script type="8b7b6af8d00f931429f834d9-text/javascript">
+      setTimeout(()=>{!function(e,t){var n=e.amplitude||{_q:[],_iq:{}},i=t.createElement("script");i.type="text/javascript",i.integrity="sha384-d/yhnowERvm+7eCU79T/bYjOiMmq4F11ElWYLmt0ktvYEVgqLDazh4+gW9CKMpYW",i.crossOrigin="anonymous",i.async=!0,i.src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js",i.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var r=t.getElementsByTagName("script")[0];function s(e,t){e.prototype[t]=function(){return this._q.push([t].concat(Array.prototype.slice.call(arguments,0))),this}}r.parentNode.insertBefore(i,r);for(var o=function(){return this._q=[],this},a=["add","append","clearAll","prepend","set","setOnce","unset"],c=0;c<a.length;c++)s(o,a[c]);n.Identify=o;for(var u=function(){return this._q=[],this},l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"],p=0;p<l.length;p++)s(u,l[p]);n.Revenue=u;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","groupIdentify","onInit","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"];function m(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}for(var n=0;n<d.length;n++)t(d[n])}m(n),n.getInstance=function(e){return e=(e&&0!==e.length?e:"$default_instance").toLowerCase(),n._iq.hasOwnProperty(e)||(n._iq[e]={_q:[]},m(n._iq[e])),n._iq[e]},e.amplitude=n,e.amplitude.getInstance().init("611e06f24e428afde0871c364a3c06e0")}(window,document)},200);
+    </script>
+    <script type="8b7b6af8d00f931429f834d9-text/javascript">
+      adroll_adv_id="A3LOL5BLD5HI5H56EWSGKY",adroll_pix_id="2F3AHWYHARFQFB5KXR6KBC",function(){var t=function(){if(!document.readyState||/loaded|complete/.test(document.readyState)){if(!window.__adroll_loaded)return __adroll_loaded=!0,void setTimeout(t,50);var e=document.createElement("script"),d="https:"==document.location.protocol?"https://s.adroll.com":"http://a.adroll.com";e.setAttribute("async","true"),e.type="text/javascript",e.src=d+"/j/roundtrip.js",((document.getElementsByTagName("head")||[null])[0]||document.getElementsByTagName("script")[0].parentNode).appendChild(e)}else setTimeout(t,10)};window.addEventListener?window.addEventListener("load",t,!1):window.attachEvent("onload",t)}();
+    </script>
+    <script type="8b7b6af8d00f931429f834d9-text/javascript">
+      !function(e,t,n,c,o,a,f){e.fbq||(o=e.fbq=function(){o.callMethod?o.callMethod.apply(o,arguments):o.queue.push(arguments)},e._fbq||(e._fbq=o),o.push=o,o.loaded=!0,o.version="2.0",o.queue=[],(a=t.createElement(n)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(f=t.getElementsByTagName(n)[0]).parentNode.insertBefore(a,f))}(window,document,"script"),fbq("init","210336573298353"),fbq("track","PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=210336573298353&ev=PageView
+  &noscript=1"
+    /></noscript>
+    <script
+      src="runtime-es2015.eeb84f5e1173b938f5ce.js"
+      type="8b7b6af8d00f931429f834d9-module"
+    ></script>
+    <script
+      src="runtime-es5.eeb84f5e1173b938f5ce.js"
+      nomodule
+      defer
+      type="8b7b6af8d00f931429f834d9-text/javascript"
+    ></script>
+    <script
+      src="polyfills-es5.16a17552a9d9d3ea7ffe.js"
+      nomodule
+      defer
+      type="8b7b6af8d00f931429f834d9-text/javascript"
+    ></script>
+    <script
+      src="polyfills-es2015.42c2a3020ae24a0ac825.js"
+      type="8b7b6af8d00f931429f834d9-module"
+    ></script>
+    <script
+      src="main-es2015.493f130c4536b0bf55da.js"
+      type="8b7b6af8d00f931429f834d9-module"
+    ></script>
+    <script
+      src="main-es5.493f130c4536b0bf55da.js"
+      nomodule
+      defer
+      type="8b7b6af8d00f931429f834d9-text/javascript"
+    ></script>
+    <script
+      src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+      data-cf-settings="8b7b6af8d00f931429f834d9-|49"
+      defer=""
+    ></script>
+  </body>
+</html>
